@@ -114,18 +114,30 @@ button[type="submit"] {
 
 
 .info-iban p{
-  
   border-radius: 8px;
   padding: 16px 12px;
   width: 100%;
   text-align: left;
 }
 
+.info-iban em{
+  font-weight: 600;
+}
+
 .active{
-  border: 1px solid #9496a0;
+  border: 1px solid #7af1a8;
+  background-color: #ecfdf5;
+  color: #004e3a;
 }
 
 .inactive{
-  border: 1px solid #dfdfdf;
-  color: #969696;
+  border: 1px solid #cad5e2;
+  color: #90a1b9;
+  background-color: #f8fafc;
+}
+
+.danger{
+  border: 1px solid #ffa2a2;
+  color: #9e0912;
+  background-color: #fef2f2;
 }
