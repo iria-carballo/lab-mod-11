@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-color: #fff;
+  --color-primary: #141c45;
+  --color-secondary: #da5812;
+  --font-family: Inter, "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  line-height: 1;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+}
+
+button {
+  display: inline-block;
+  max-width: 20vw;
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--color-secondary);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin: 32px 0 24px 0;
+}
+
+textarea {
+  min-height: 30vh;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+}
+.contenedor-img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  gap: 24px;
+}
+
+.contenedor-img img{
+  padding: 16px;
+  max-height: 350px;
+  height: auto;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  object-fit: contain;
+  display: block;
+}
+
+.contenedor-img p{
+  border-radius: 8px;
+  padding: 16px 12px;
+  width: 100%;
+  text-align: left;
+}
+
+.danger{
+  border: 1px solid #ffa2a2;
+  color: #9e0912;
+  background-color: #fef2f2;
+}

@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="reseteo.css" />
     <link rel="stylesheet" href="global-styles.css" />
-    <title>Valida un IBAN</title>
+    <title>Extrae las imágenes de un HTML</title>
   </head>
   <body>
     <div id="app">
       <div class="main">
-        <h1>Valida un IBAN</h1>
+        <h1>Extrae las imágenes de un HTML</h1>
         <form id="formulario" class="formulario">
-          <input
-            type="text"
-            name="iban"
-            id="numero-iban"
-            placeholder="WW00 0000 0000 00 0000000000"
-          />
-          <button type="submit">Validar</button>
+          <textarea
+            name="codigo html"
+            id="codigo-html"
+            placeholder="Pega aquí tu código"
+          ></textarea>
+          <button type="submit">Buscar imágenes</button>
         </form>
-        <div id="info-iban" class="info-iban"></div>
+        <div id="contenedor-img" class="contenedor-img"></div>
       </div>
     </div>
     <script type="module" src="main.ts"></script>
