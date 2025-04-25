@@ -1,4 +1,4 @@
-import { extraerImagenes } from "./main";
+import { extraerImagenes } from "./extraer-img";
 
 const htmlContent = `<html lang="en">
   <head>
@@ -28,7 +28,7 @@ const htmlContent = `<html lang="en">
       </form>
       <div class="character-list" id="character-list">
         <div class="card">
-          <img alt="foto de mortadelo" src="http://localhost:3000/./mortadelo.webp" />
+          <img alt="foto de mortadelo" src="http://localhost:3000/./mortadelo.webp" alt ="mortadelo" />
           <div class="container-description">
             <h2><span>Nombre: </span>Mortadelo</h2>
             <p><span>Especialidad: </span>Disfraces</p>

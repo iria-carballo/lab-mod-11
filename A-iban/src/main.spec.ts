@@ -1,19 +1,4 @@
-import { estaBienFormadoElIBAN, extraerDatosIban } from "./main";
-
-describe("estaBienFormadoElIBAN", () => {
-  test.each([
-    ["ES21 1465 0100 72 2030876293", true],
-    ["ES2114650100722030876293", true],
-    ["ES21-1465-0100-72-2030876293", true],
-    ["ES6621000418401234567891", true],
-  ])(
-    "Para el número de cuenta %p debería devolver el valor %p",
-    (valor: string, expected: boolean) => {
-      expect(estaBienFormadoElIBAN(valor)).toBe(expected);
-    }
-  );
-});
-
+import { extraerDatosIban } from "./gestionar-iban";
 describe("extraerDatosIban", () => {
   test.each([
     [
@@ -45,7 +30,11 @@ describe("extraerDatosIban", () => {
       cuenta: string
     ) => {
       const desglose = {
-        pais, banco,sucursal, control, cuenta
+        pais,
+        banco,
+        sucursal,
+        control,
+        cuenta,
       };
       expect(extraerDatosIban(valor)).toEqual(desglose);
     }

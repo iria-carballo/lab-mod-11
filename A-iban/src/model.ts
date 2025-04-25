@@ -4,11 +4,6 @@
   "ES91-2100-0418-45-0200051332",        // con guiones
 */
 
-export type Validacion = {
-  esValida: boolean;
-  mensajeError?: string;
-};
-
 export type DatosIban = {
   pais: string;
   banco: string;
@@ -59,3 +54,8 @@ export const bancosEspañoles: [string, string][] = [
   ["0108", "Société Générale"],
   ["2103", "Unicaja Banco"],
 ];
+
+export interface datoParaPintar {
+  valor:string;
+  label:string;
+}
